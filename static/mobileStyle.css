@@ -2,7 +2,7 @@
 @media (max-width: 600px) {
 
   .navbar-brand img {
-    opacity: 0;
+    display: none;
   }
 
   #home {
