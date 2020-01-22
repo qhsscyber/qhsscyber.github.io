@@ -3,205 +3,167 @@
 <head>
   <title>QHSS Cyber</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/dece7f23a7.js" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <link href="style.css" rel="stylesheet"/>
-  <link href="carousel.css" rel="stylesheet"/>
-  <link href="members.css" rel="stylesheet"/>
+  <link href="static/style.css" rel="stylesheet"/>
+  <link href="static/mobileStyle.css" rel="stylesheet"/>
 </head>
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
-            <span class="sr-only">Toggle navigation</span> <!--- for mobile that don't know that a navbar is there --->
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
 
-          <a class="navbar-brand" href="#home">
-            <img src="img/logo_transparent_cleaner.png" alt="">
-          </a>
+<body>
 
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse-main">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#members">Members</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top stroke">
+
+    <a class="navbar-brand" href="#home">
+      <img src="resources/logo_transparent_cleaner.png" alt="">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#announcements">Announcements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#activities">Activities</a>
+        </li>
+        <li class="nav-item" style="padding: 10px 20px 10px 10px">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="home">
+      <img src="resources/cyber_banner_transparent.png" alt="">
+  </div>
+
+  <div id="about"></div>
+  <div class="hidden" style="margin-right: 25%;">
+      <h1>About Us</h1>
+      <div class="info">
+          <p class="lead">
+              QHSS Cyber is a web development club in Queens High School for the Sciences
+              at York College (QHSS@YC). We create websites and learn the trending
+              web dev technologies together! <br>
+              <b>You don't have to know anything about
+              programming to join&mdash;just be willing to learn and dedicate
+              your time to the club.</b>
+            </p>
       </div>
-    </nav>
+  </div>
 
-    <div id="home">
-        <img src="img/cyber_banner.png" alt="">
-    </div>
-
-    <div id="fixed" class="container">
-    </div>
-
-    <div class="padding">
-    <div class="container">
-        <h2 align="center">Communication & Important Announcments</h2>
+  <div id="announcements"></div>
+  <div class="hidden" style="margin-left: 25%;">
+      <h1>Announcements</h1>
+      <div class="info">
         <p class="lead">
-          <b>Interest Meeting on Wednesday, January 29th, 2020</b><br>
+          <h3>Interest Meeting on Wednesday, February 5th, 2020</h3>
           If you have any questions, contact us <a href="#contact">here</a>.<br>
         </p>
-    </div>
-    </div>
-
-    <div id="fixed" class="container">
-    </div>
-
-    <div class="padding", id="about">
-    <div class="container">
-        <h2 align="center">About</h2>
         <p class="lead">
-          QHSS Cyber is a web development club in Queens High School for the Sciences
-          at York College (QHSS@YC). We create websites and learn the trending
-          web dev technologies together! <b>You don't have to know anything about
-          programming to join&mdash;just be willing to learn and dedicate
-          your time to the club.</b> Most of our current members learned the necessary
-          material last year, and we'll help catch you guys up to speed!
-        </p>
-        <p class="lead">
-          Just being in this club is high key useless. <b>You need to put in the
-          time to build your own project portfolio and skillset. This club
-          only helps you with the process.</b> Having a great website project portfolio
-          helps a lot in landing web dev internships and taking initiative
-          to learn something new looks good to colleges!
-        </p>
-        <p class="lead">
-          Right now, we mainly work with HTML and CSS (Bootstrap). However, more
-          advanced members also use Javascript (NodeJS, React, JQuery, etc.).
-        </p>
-        <p class="lead">
-          Meetings are held every Wednesday in room 214, and the advisor is Mr. Mondestin.
+          Meetings are held every Wednesday in room 214 after 9th with Mr. Mondestin.
           They are mainly held for status updates or general group planning and brainstorming.
-          Most of the work is done outside of club time, so you only get what you make of
-          this club.
+          Most of the work is done outside of club time or over Discord.
         </p>
-    </div>
-    </div>
-
-    <div id="fixed" class="container">
-    </div>
-
-    <div class="padding", id="members">
-    <div class="container">
-      <h2>Members</h2>
-      <div class="grid-wrapper">
-          <div class="card">
-            <img src="members/mondestin.jpeg" alt="Mondestin">
-            <div class="card-container">
-              <h2>Mr. Mondestin</h2>
-              <p class="title">Advisor</p>
-              <p>
-                <a href="jmondestin@schools.nyc.gov ">Email</a>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="members/joseph.png" alt="Joseph">
-            <div class="card-container">
-              <h2>Joseph Chen</h2>
-              <p class="title">President</p>
-              <p>
-                <a href="https://github.com/jchen42703">Github</a> |
-                <a href="https://jchen42703.github.io/">Personal</a> |
-                <a href="https://www.linkedin.com/in/joseph-chen-47b74615a/">LinkedIn</a>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="members/jodi.jpg" alt="Jodi">
-            <div class="card-container">
-              <h2>Jodi Wang</h2>
-              <p class="title">Treasurer</p>
-              <p>
-                <a href="https://github.com/oisrevni">Github</a>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="members/niha.jpg" alt="Niha">
-            <div class="card-container">
-              <h2>Niha Das</h2>
-              <p class="title">Member</p>
-              <p>
-                <a href="https://github.com/nihadas">Github</a> |
-                <a href="https://nihadas.github.io/">Personal</a>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="members/ethan.jpg" alt="Ethan">
-            <div class="card-container">
-              <h2>Ethan Wong</h2>
-              <p class="title">Member</p>
-              <p>
-                <a href="https://github.com/WillingLearn">Github</a>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="members/jeshua.jpg" alt="Jeshua">
-            <div class="card-container">
-              <h2>Jeshua Kim</h2>
-              <p class="title">Member</p>
-              <p>
-                <a href="https://github.com/jeshuakim">Github</a>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="members/peter.jpg" alt="Peter">
-            <div class="card-container">
-              <h2>DaoHao Li</h2>
-              <p class="title">Member</p>
-              <p>
-                <a href="">Github</a>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="members/bryan.jpg" alt="Bryan">
-            <div class="card-container">
-              <h2>Bryan Warner</h2>
-              <p class="title">Member</p>
-              <p>
-                <a href="https://github.com/jeshuakim">Github</a>
-              </p>
-            </div>
-          </div>
       </div>
-    </div>
-    </div>
+  </div>
 
-    <div id="fixed" class="container">
-    </div>
-
-    <footer class="container-fluid text-center">
-      <div class="col-sm-12">
-        <h3 id="contact">Contact</h3>
-        <span>Contact us at qhsscyber "at" gmail "dot" com or at the links below.</span>
-        <br>
-        <a href="https://discord.gg/VfHcb5c">
-          <i class="fab fa-discord"></i>
-        </a>
-        <a href="https://github.com/jchen42703">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.instagram.com/qhsscyber/">
-          <i class="fab fa-instagram"></i>
-        </a>
+  <div class="hidden" style="margin-right: 25%;">
+      <h1>Why Web Development?</h1>
+      <div class="info">
+        <h3>Web development combines coding and graphic design.</h3>
+        Through this club, you will:
+        <ul>
+            <li>Build a portfolio.</li>
+            <li>Learn cutting edge technology.</li>
+            <li>Look good to colleges and employers.</li>
+        </ul>
       </div>
-    </footer>
-  </body>
+  </div>
+
+  <div class="hidden" style="margin-left: 25%;">
+      <h1>Our Current Tech Stack</h1>
+      <div class="info">
+        <h2>Web Development</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS (SASS and Bootstrap)</li>
+          <li>Javascript (JQuery and React)</li>
+        </ul>
+
+        <h2>Graphic Design</h2>
+        <ul>
+          <li>Canva</li>
+        </ul>
+      </div>
+  </div>
+
+  <div class="hidden" id="activities">
+      <h1>Projects and Activities</h1>
+      <div class="project-info">
+        <div>
+          <h2 align="center">For beginners</h2>
+          <p class="lead">
+            The main agenda we have for beginners is to learn the skills necessary
+            for web development. We recommend:
+            <ul>
+              <li><a href="https://www.codecademy.com/">Codeacademy</a>
+              for learning HTML and CSS
+              </li>
+              <li><a href="https://scrimba.com/g/gbootstrap4">Scrimba</a>
+              for learning Bootstrap (CSS)
+              </li>
+              <li><a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9iEwigam3gTjU_7IA3W2WZA">
+              Net Ninja's tutorials</a> for learning Sass (SCSS)</li>
+              <li><a href="https://github.com/getify/You-Dont-Know-JS">"You Don't Know JS" (E-Book)</a>
+              for learning Javascript
+              </li>
+              <li><a href="https://www.codecademy.com/">Codeacademy</a>
+              for learning NodeJS, Angular, and React.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div>
+          <h2>For the experienced</h2>
+          <p class="lead">
+            This is where you get the real value from this club,
+            <span style="font-weight: bold">through projects!</span> Our current
+            ongoing project is upgrading this website (currently maintained using
+            GitHub at <a href="https://github.com/qhsscyber/qhsscyber.github.io">here</a>)
+            to a more unique design. However, we're open to new ideas, such as
+            AI web apps, freelancing, etc.
+          </p>
+        </div>
+      </div>
+  </div>
+
+  <footer class="container-fluid text-center" style="margin-top: 5%;" id="contact">
+    <div class="col-sm-12">
+      <h3 id="contact">Contact</h3>
+      <span>Contact us at qhsscyber "at" gmail "dot" com or at the links below.</span>
+      <br>
+      <a href="https://discord.gg/VfHcb5c">
+        <i class="fab fa-discord"></i>
+      </a>
+      <a href="https://github.com/qhsscyber">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/qhsscyber/">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </footer>
+  <script type="text/javascript" src="static/scripts.js"></script>
+</body>
 </html>
